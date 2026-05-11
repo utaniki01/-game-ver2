@@ -1,0 +1,73 @@
+body{
+        padding: 0;
+        margin: 0;
+      }
+      canvas {
+  background: #eee;
+  display: block;
+  margin: 20px auto;
+
+  width: 480px;
+  height: 320px;
+
+  border: 3px solid black;
+}
+/*GAME OVERのフォント設計書*/
+  #GAMEOVER{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  font-weight: bold;
+  color: red;
+  text-shadow: 0 0 20px black;
+  display: none; /*最初は隠す*/
+  }
+
+  #GAMECLEAR{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) ;
+    font-size: 72px;
+    font-weight: bold;
+    color: yellow;
+    text-shadow:0 0 20px gold;
+    display: none;
+  }
+
+.Lives {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: #0095DD;
+
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.SCORE{
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: #0095DD;
+
+  position: absolute;
+  right: 20px;
+  top: 8px;
+}
+
+@media screen and (max-width: 600px) {
+
+  #GAMEOVER,
+  #GAMECLEAR {
+    font-size: 40px;
+  }
+
+  .Lives,
+  .SCORE {
+    font-size: 16px;
+    right: 10px;
+  }
+
+}
